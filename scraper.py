@@ -7,5 +7,5 @@ r = requests.get("http://" + url)
 data = r.text
 a = BeautifulSoup(data);
 
-for link in soup.find_all('a'):
+for link in a.find_all('a'):
     print(link.get('href'))
